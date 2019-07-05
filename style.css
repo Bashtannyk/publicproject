@@ -1,3 +1,58 @@
-body {
-    background: yellow
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+header {
+    margin: auto;
+    display: flex;
+    max-width: 1100px;
+    background: red;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+header ul li a {
+    padding: 15px 10px;
+    display: block;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: bold;
+}
+header ul li a:hover {
+    background: #cccccc;
+}
+
+#logo {
+    margin: auto;
+    height: 40px;
+    width: 50px;
+    font-size: 20px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 620px) {
+    header ul, header {
+        justify-content: center;
+    }
+    #logo {
+        display: none;
+    }
 }
